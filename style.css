@@ -1,0 +1,317 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+}
+
+/* MOBILE */
+.container__cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 20px auto;
+}
+
+.main__principal{
+    background-color: #E5E5E5;
+}
+
+.titulo__cabecalho{
+    font-size: 17.92px;
+    font-weight: 500;
+}
+
+.imagem__titulo::before{
+   content: url(/images/estrela.png); 
+   margin-right: 5px;
+   width: 12px;
+}
+
+.menu__itens-cabecalho{
+    width: auto;
+}
+
+/* .banner_tela{
+    background-image: url(/assets/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 221px;
+    display: flex;
+    object-fit: cover;
+} */
+
+.banner{
+    width: 100%;
+    height: 221px;
+    object-fit: cover;
+}
+
+.lista__titulos{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 20px auto;
+}
+
+.palava_titulo{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.palava_titulo-produtos{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* .imagem__item{
+    width: 100%;
+    height: 70%;
+    border-radius: 4px;
+} */
+
+.imagem{
+    width: auto;
+    height: auto;
+}
+
+.descricao__item{
+    font-size: 12px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.preço__item{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cor{
+    color: #5CA720;
+    margin-left: 5px;
+}
+
+.barra__nav{
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 25px;
+    margin-bottom: 35px;
+}
+
+.barra__nav-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lista__produtos{
+    display: grid;
+    row-gap: 5px;
+}
+
+/* .container__produtos{
+    width: 85%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+} */
+
+/* .item__vendas--principal{
+    display: grid;
+    row-gap: 5px;
+} */
+
+.descricao__item{
+    font-size: 12px;
+    font-weight: 500;
+    width: 120px;
+}
+
+
+.rodape{
+    background-color: #F9F9F9F9;
+    height: auto;
+}
+
+.container__rodape{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lista__atalhos{
+    display: grid;
+    row-gap: 15px;
+    padding: 30px 0 30px 0;
+}
+
+.texto{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #161616;
+}
+
+.form__email{
+    display: flex;
+    flex-direction: column;
+}
+
+.label__form{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.campo__email{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 43px;
+    width: auto;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+.campo__email::placeholder{
+    color: #A8A4A4;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    left: 10px;
+}
+
+.button__inscrever{
+    height: 43px;
+    background-color: #5CA720; 
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.redes__cartoes{
+    margin-top: 45px;
+}
+
+.grupo_itens{
+    width: 100%;
+}
+.redes__cartoes-desktop{
+    display: none;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px){
+    .container__cabecalho{
+        width: 85%;
+        justify-content: space-between;
+        margin: 25px auto;
+    }
+
+    .menu__itens-cabecalho {
+      width: auto;  
+    }
+
+    .banner{
+        background-size: 100%;
+        height: 100%;
+    }
+
+    .palava_titulo{
+        font-size: 20px;
+    }
+
+    .palava_titulo-produtos{
+        font-size: 18px;
+    }
+
+    .imagem{
+        width: 100%;
+        height: auto;
+    }
+
+    .barra__nav{
+        display: flex;
+        /* column-gap: 150px; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .lista__produtos{
+        width: 25%;
+        row-gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .descricao__item{
+        font-size: 22px;
+        width: 220px;
+    }
+
+    .preço__item{
+        font-size: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .container__rodape{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    .form__email{
+        justify-content: center;
+    }
+
+    .botao__campo{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .button__inscrever{
+        width: 152PX;
+    }
+
+    .campo__email{
+        margin: 0;
+        width: 237px;
+    }
+
+    .redes__cartoes{
+        display: none;
+    }
+
+    .grupo_itens{
+        width: 7%;
+    }
+
+    .grupo_itens-cartoes{
+        width: 10%;
+    }
+    .redes__cartoes-desktop{
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 25px 0 25px 0;
+    }
+}
